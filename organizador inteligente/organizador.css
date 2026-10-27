@@ -1,0 +1,127 @@
+
+/* ===== CONFIGURAÇÃO GERAL ===== */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 25px;
+    background-color: #f8f4fc;
+    color: #51445f;
+    font-family: Cambria, Georgia, serif;
+    line-height: 1.6;
+}
+
+/* ===== TÍTULOS ===== */
+
+header {
+    background-color: #e8dcf5;
+    padding: 25px;
+    text-align: center;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    border: 1px solid #d8c5eb;
+}
+
+h1 {
+    color: #684b83;
+    margin: 0;
+    font-size: 32px;
+}
+
+header p {
+    color: #78658b;
+    margin-bottom: 0;
+}
+
+h2 {
+    color: #684b83;
+    background-color: #eadff5;
+    padding: 12px 16px;
+    border-radius: 10px;
+    font-size: 22px;
+    margin-top: 35px;
+}
+
+h3 {
+    color: #795b98;
+}
+
+/* ===== TABELAS ===== */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0 35px;
+    background-color: #ffffff;
+    border: 1px solid #d9c9e8;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(104, 75, 131, 0.08);
+}
+
+th {
+    background-color: #8065a0;
+    color: #ffffff;
+    padding: 13px 10px;
+    border: 1px solid #d4c1e6;
+    text-align: center;
+}
+
+td {
+    padding: 11px 9px;
+    border: 1px solid #e5d9ef;
+    text-align: center;
+}
+
+/* Linhas alternadas */
+
+tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f3ecfa;
+}
+
+/* Nome dos dias */
+
+tbody th {
+    background-color: #d9c6ed;
+    color: #57416e;
+}
+
+/* Efeito ao passar o mouse */
+
+tbody tr:hover {
+    background-color: #e9ddf6;
+}
+
+/* ===== MATÉRIAS ===== */
+
+.materias {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.materias details {
+    background-color: #ffffff;
+    border: 1px solid #dfd0ed;
+    border-radius: 12px;
+    padding: 16px;
+    box-shadow: 0 3px 10px rgba(104, 75, 131, 0.07);
+    transition: background-color 0.2s, border-color 0.2s;
+}
+
+.materias details:hover {
+    border-color: #bda2dc;
+    background-color: #fdfbff;
+}
+
+.materias summary {
+    color: #684b83;
+}
